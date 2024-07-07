@@ -46,6 +46,8 @@ p {
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
+    box-shadow: 0 5px 5px -2px lightgrey;
+    z-index:10;
 }
 
 .content {
@@ -54,6 +56,8 @@ p {
     grid-row-start: 2;
     grid-row-end: 7;
     background-color: #E4E7EF;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 .bigWhiteIcons {
@@ -135,4 +139,16 @@ input {
     width: 33vw;
     margin-left: 15px;
     padding-left: 10px;
+}
+
+button {
+    height: 38px;
+    width: 93px;
+    background-color: #5A86CF;
+    border: 0;
+    border-radius: 50px;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    margin-left: 25px;
 }
