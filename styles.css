@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+    box-sizing: border-box; 
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -9,10 +12,14 @@ body {
     justify-content: center;
 }
 
+p {
+    margin: 0;
+}
+
 .container {
-    margin-top:20px;
     width:80%;
     display: grid;
+    /*grid-template-rows: repeat(6, 16vh);*/
     grid-template-rows: repeat(6, minmax(16%, 170px));
     grid-template-columns:  repeat(5, minmax(16%, 500px));
 }
@@ -22,7 +29,10 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 7;
-    background-color: darkgray;
+    background-color: #5A86CF;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .header {
@@ -30,7 +40,12 @@ body {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    background-color: lightgray;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .content {
@@ -38,5 +53,86 @@ body {
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 7;
-    background-color: grey;
+    background-color: #E4E7EF;
+}
+
+.bigWhiteIcons {
+    filter: invert(99%) sepia(1%) saturate(138%) hue-rotate(336deg) brightness(117%) contrast(100%);
+    height: 50px;
+    width: 50px;
+}
+
+.whiteIcons {
+    filter: invert(99%) sepia(1%) saturate(138%) hue-rotate(336deg) brightness(117%) contrast(100%);
+    height: 25px;
+    width: 25px;
+    margin-right: 30px;
+}
+
+.dashboard, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.dashboard {
+    font-size: 29px;
+    margin-bottom: 50px;
+}
+
+.home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    font-size: 24px;
+}
+
+.items {
+    padding-left: 10px;
+    padding-bottom:23px;
+}
+
+.settings {
+    margin-top: 46px;
+}
+
+.blackIcons {
+    height: 25px;
+    width: 25px;
+}
+
+.userProfilePicture {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.headerRowOne, .headerRowTwo {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 65px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.userButtons {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    background-color: rgb(221, 224, 235);
+    border: 0;
+    font-size: 23px;
+    border-radius: 15px;
+    width: 33vw;
+    margin-left: 15px;
+    padding-left: 10px;
 }
