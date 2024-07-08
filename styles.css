@@ -50,6 +50,10 @@ p {
     z-index:10;
 }
 
+.boxShadow {
+    box-shadow: 8px 8px 8px -5px rgb(201, 201, 201);
+}
+
 .content {
     grid-column-start: 2;
     grid-column-end: 6;
@@ -263,6 +267,7 @@ hr {
     height:71%;
     padding-top: 15px;
     padding-bottom: 15px;
+    border-radius: 15px;
 }
 
 .trendingProfile {
