@@ -152,3 +152,127 @@ button {
     font-weight: 500;
     margin-left: 25px;
 }
+
+.project {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
+    gap: 25px;
+    padding-top: 13px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    width:100%;
+    height:90%;
+}
+
+.yellowLine {
+    background-color: rgb(235, 179, 76);
+    height: 100%;
+    width: 15px;
+}
+
+.projectCard {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.projectIcons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardIcons {
+    margin-left: 25px;
+}
+
+.projectTitle {
+    font-size: 20px; 
+    font-weight: 500; 
+}
+
+.projectWords {
+    padding-top: 20px;
+}
+
+.projectDetails {
+    padding-top: 5px;
+    color: rgb(102, 102, 102);
+    width:80%;
+}
+
+.sideSection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.annoCard {
+    background-color: white;
+    margin-right: 35px;
+    margin-top:13px;
+    display: grid;
+    grid-template-rows: 1fr 5px 1fr 5px 1fr;
+    grid-template-columns: 1fr;
+    height: 85%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+hr {
+    border: none;
+    height:1px;
+    background: #dddddd;
+    margin: auto;
+}
+
+.annoTop, .annoMiddle, .annoBottom {
+    margin:auto;
+
+}
+
+.annoWords {
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.annoContent {
+    padding:20px;
+}
+
+.annoTitle {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.trendingCard {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    margin-right: 35px;
+    margin-top:13px;
+    height:71%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.trendingProfile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.trendingProfileHandler {
+    margin-left: 15px;
+    font-size: 15px;
+}
